@@ -1,4 +1,5 @@
-REPO_ROOT="$(git rev-parse --show-toplevel)"
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+REPO_ROOT="${HERE}"
 
 source "${REPO_ROOT}/check_brew_formula_installed.sh"
 source "${REPO_ROOT}/ask_yes_or_no.sh"
